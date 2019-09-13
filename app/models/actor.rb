@@ -6,10 +6,11 @@ class Actor < ActiveRecord::Base
     [self.first_name, self.last_name].join(" ")
   end
   def list_roles
-    self.characters.each do |character|
+    roles = self.characters.each do |character|
       puts [character.name, character.show.name].join(" - ")
       # binding.pry
     end
+    roles
   end
 
 end
