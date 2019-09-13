@@ -11,6 +11,7 @@ class Actor < ActiveRecord::Base
       # binding.pry
     end
     roles
+    binding.pry
   end
 
 end
