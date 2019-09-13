@@ -8,7 +8,7 @@ class Actor < ActiveRecord::Base
   def list_roles
     self.characters.each do |character|
       [character.name, character.show.name].join(" - ")
-      # binding.pry
+      binding.pry
     end
   end
 
