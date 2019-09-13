@@ -6,9 +6,10 @@ class Actor < ActiveRecord::Base
     [self.first_name, self.last_name].join(" ")
   end
   def list_roles
-    self.Character.name
-
-
+    
+    self.characters.each do |character|
+      "character.name - character.show"
+    end
   end
 
 end
