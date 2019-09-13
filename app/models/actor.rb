@@ -7,7 +7,7 @@ class Actor < ActiveRecord::Base
   end
   def list_roles
     roles = self.characters.each do |character|
-      puts [character.name, character.show.name].join(" - ")
+       [character.name, character.show.name].join(" - ")
       # binding.pry
     end
     roles
