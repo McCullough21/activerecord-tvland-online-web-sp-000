@@ -11,6 +11,7 @@ class Actor < ActiveRecord::Base
        roles << [character.name, character.show.name].join(" - ")
       binding.pry
     end
+    roles
   end
 
 end
