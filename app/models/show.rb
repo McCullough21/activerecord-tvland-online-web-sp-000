@@ -9,6 +9,5 @@ class Show < ActiveRecord::Base
       actors << actor.full_name
     end
     actors
-    binding.pry
   end
 end
